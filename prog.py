@@ -90,3 +90,69 @@ if num == num[::-1]:
 
 else:
     print("Not a Palindrome Number")
+
+
+# Armstrong Number
+
+num = int(input("Enter a num : "))
+digits = str(num)
+power = len(digits)
+total = sum(int(digit) ** power for digit in digits)
+
+if total == num:
+    print("Armstrong Number")
+
+else:
+    print("Not an Armstrong Number")
+
+
+# Reverse a Number
+
+num = input("Enter a number: ")
+
+print("Reverse:", num[::-1])
+
+
+#conditional statement
+
+light = input("light:")
+
+if(light == "red"):
+     print("stop")
+
+elif(light == "yellow:"):
+     print("look")
+
+elif(light == "green:"):
+     print("go")
+
+else:
+     print("broken light")
+
+
+ # find greatest of three numbers
+
+a = int (input(" enter the value of a:"))
+b = int (input(" enter the value of b:"))
+c = int (input(" enter the value of :c"))
+
+if((a>b)and(a>c)):
+    print("a is greater")
+
+elif((b>a)and(b>c)):
+    print(" b is greater")
+
+else:
+    print("c is greater")
+
+
+
+# check the num is multiple of 5 or not
+
+    num = int (input("enter the num:"))
+
+if(num%5==0):
+    print("multiple of 5")
+
+else:
+    print("not a multiple of 5")
