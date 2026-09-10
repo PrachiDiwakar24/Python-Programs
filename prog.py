@@ -156,3 +156,54 @@ if(num%5==0):
 
 else:
     print("not a multiple of 5")
+
+
+# table of any number 
+n = int(input('enter the vlaue of n:'))
+i = 1
+
+while i<=10:
+
+    print(n*i)
+    i=i+1
+
+
+# count vowels in a string 
+
+string = input("Enter a string: ")
+vowels = "aeiouAEIOU"
+count = 0
+
+for char in string:
+
+    if char in vowels:
+        count += 1
+
+print("Number of vowels:", count)
+
+
+# simple calculator
+
+a = float(input("Enter the value of a: "))
+b = float(input("Enter the value of b: "))
+operator = input("Enter operator (+, -, *, /): ")
+
+if operator == "+":
+    print("Result:", a + b)
+
+elif operator == "-":
+    print("Result:", a - b)
+
+elif operator == "*":
+    print("Result:", a * b)
+
+elif operator == "/":
+
+    if b != 0:
+        print("Result:", a / b)
+
+    else:
+        print("Cannot divide by zero")
+
+else:
+    print("Invalid operator")
