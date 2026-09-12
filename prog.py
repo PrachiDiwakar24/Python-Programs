@@ -232,3 +232,33 @@ if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
     
 else:
     print("Not a leap year")
+
+
+ # average of three numbers 
+
+def print_avg(a,b,c):
+    avg = (a+b+c)/2
+    print(avg)
+    return avg
+
+print_avg(5,1,2)
+
+
+#waf to print the length of the list 
+
+cities = ['mumbai','pune','delhi','noida','chennai','gurgaon']
+fruits = ['mango','apple','grapes','peach']
+
+def print_len(list):
+    print(len(list)) 
+print_len(cities)
+print_len(fruits)
+
+
+# factorial of n num
+
+def fact(n):
+    if(n==0 or n==1 ):
+      return 1
+    return fact(n-1)*n
+print(fact(7))
