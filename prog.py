@@ -262,3 +262,37 @@ def fact(n):
       return 1
     return fact(n-1)*n
 print(fact(7))
+
+
+
+# Student Grade Calculator
+
+name = input("Enter student name: ")
+
+marks = []
+
+for i in range(5):
+    mark = float(input(f"Enter marks for subject {i + 1}: "))
+    marks.append(mark)
+
+total = sum(marks)
+percentage = total / 5
+
+if percentage >= 90:
+    grade = "A+"
+elif percentage >= 80:
+    grade = "A"
+elif percentage >= 70:
+    grade = "B"
+elif percentage >= 60:
+    grade = "C"
+elif percentage >= 50:
+    grade = "D"
+else:
+    grade = "F"
+
+print("\n ----Student Result---- ")
+print("Name:", name)
+print("Total Marks:", total)
+print("Percentage:", percentage, "%")
+print("Grade:", grade)
