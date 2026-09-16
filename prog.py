@@ -313,3 +313,31 @@ else:
     bill = (100 * 5) + (100 * 7) + ((units - 200) * 10)
 
 print("Electricity Bill =", bill)
+
+
+# dictonary 
+dict = {
+    "name":" prachi",
+    "cgpa": 9.3,
+    "subject":"python",
+}
+print(dict.keys())
+print(len(dict.keys()))
+print(dict)
+print(type(dict))
+print(dict["name"])
+dict["name"]= "geeta"
+print(dict)
+null_dict = {}  #empty dict
+print(null_dict)
+
+
+
+# Voting Eligibility Checker
+
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+    print("You are not eligible to vote.")
