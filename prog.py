@@ -332,6 +332,15 @@ null_dict = {}  #empty dict
 print(null_dict)
 
 
+# factorial using while loop
+n = 5
+fact = 1
+i = 1
+while i<=n:
+    fact = fact*i
+    i += 1
+print(fact)
+
 
 # Voting Eligibility Checker
 
