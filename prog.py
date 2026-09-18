@@ -350,3 +350,14 @@ if age >= 18:
     print("You are eligible to vote.")
 else:
     print("You are not eligible to vote.")
+
+
+#waf to find factorial of n 
+n = 7
+def calc_fact(n):
+     fact = 1
+     for i in range(1,n+1):
+        fact= fact*i
+     print(fact)
+calc_fact(7)
+    
