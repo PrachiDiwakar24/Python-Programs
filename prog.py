@@ -352,6 +352,15 @@ else:
     print("You are not eligible to vote.")
 
 
+# waf for even or odd
+n = int(input("enter the value of n:"))
+def calc_num(n):
+  if n%2==0:
+    print("even")
+  else:
+    print("odd")
+calc_num(n)
+
 #waf to find factorial of n 
 n = 7
 def calc_fact(n):
