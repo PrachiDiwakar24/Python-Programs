@@ -361,6 +361,16 @@ def calc_num(n):
     print("odd")
 calc_num(n)
 
+
+# reverse counting
+
+def show(n):
+    if n==0:  # base case
+        return
+    print(n)
+    show(n-1)
+show(5)
+
 #waf to find factorial of n 
 n = 7
 def calc_fact(n):
