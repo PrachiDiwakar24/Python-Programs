@@ -371,6 +371,16 @@ def show(n):
     show(n-1)
 show(5)
 
+
+# average of three numbers 
+
+def print_avg(a,b,c):
+    avg = (a+b+c)/2
+    print(avg)
+    return avg
+
+print_avg(5,1,2)
+
 #waf to find factorial of n 
 n = 7
 def calc_fact(n):
