@@ -400,4 +400,20 @@ def calc_fact(n):
         fact= fact*i
      print(fact)
 calc_fact(7)
+
+
+# count the no of digits
+
+num = int(input("Enter a number: "))
+count = 0
+temp = abs(num)
+
+if temp == 0:
+    count = 1
+
+else:
+    while temp > 0:
+        count += 1
+        temp //= 10
+print("Number of digits:", count)
     
