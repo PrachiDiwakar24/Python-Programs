@@ -402,6 +402,18 @@ def calc_fact(n):
 calc_fact(7)
 
 
+#find a largest no from a list
+
+numbers = [12, 45, 23, 67, 34, 89, 10]
+
+largest = numbers[0]
+
+for num in numbers:
+    if num > largest:
+        largest = num
+
+print("Largest number:", largest)
+
 # count the no of digits
 
 num = int(input("Enter a number: "))
