@@ -339,11 +339,24 @@ print("Number of digits:", count)
     
 
 # Password Strength Checker
-
 password = input("Enter your password: ")
-
 if len(password) >= 8:
     print("Password is strong.")
-
 else:
     print("Password is weak.")
+
+
+#count even and odd numbers 
+numbers = [12, 7, 25, 18, 30, 9, 14, 21]
+
+even_count = 0
+odd_count = 0
+
+for num in numbers:
+    if num % 2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
+
+print("Even numbers:", even_count)
+print("Odd numbers:", odd_count)
