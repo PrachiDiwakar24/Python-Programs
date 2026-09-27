@@ -348,15 +348,25 @@ else:
 
 #count even and odd numbers 
 numbers = [12, 7, 25, 18, 30, 9, 14, 21]
-
 even_count = 0
 odd_count = 0
-
 for num in numbers:
     if num % 2 == 0:
         even_count += 1
     else:
         odd_count += 1
-
 print("Even numbers:", even_count)
 print("Odd numbers:", odd_count)
+
+
+# Character Frequency Counter
+text = input("Enter a string: ")
+char = input("Enter a character to count: ")
+
+count = 0
+
+for c in text:
+    if c == char:
+        count += 1
+
+print("Character occurs", count, "time(s).")
