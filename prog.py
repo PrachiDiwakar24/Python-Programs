@@ -359,6 +359,13 @@ print("Even numbers:", even_count)
 print("Odd numbers:", odd_count)
 
 
+# star pattern
+rows = int(input("Enter number of rows: "))
+
+for i in range(1, rows + 1):
+    print("*" * i)
+
+
 # Character Frequency Counter
 text = input("Enter a string: ")
 char = input("Enter a character to count: ")
