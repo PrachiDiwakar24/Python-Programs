@@ -361,7 +361,6 @@ print("Odd numbers:", odd_count)
 
 # star pattern
 rows = int(input("Enter number of rows: "))
-
 for i in range(1, rows + 1):
     print("*" * i)
 
@@ -369,11 +368,21 @@ for i in range(1, rows + 1):
 # Character Frequency Counter
 text = input("Enter a string: ")
 char = input("Enter a character to count: ")
-
 count = 0
-
 for c in text:
     if c == char:
         count += 1
-
 print("Character occurs", count, "time(s).")
+
+
+# random password generator 
+
+import random
+import string
+
+pass_len = 8
+charvalues = string.ascii_letters + string.digits + string.punctuation
+
+password = "".join([random.choice(charvalues)for i in range(pass_len)])
+
+print("your password is:",password)
