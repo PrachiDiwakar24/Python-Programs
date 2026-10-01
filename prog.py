@@ -379,10 +379,31 @@ print("Character occurs", count, "time(s).")
 
 import random
 import string
-
 pass_len = 8
 charvalues = string.ascii_letters + string.digits + string.punctuation
-
 password = "".join([random.choice(charvalues)for i in range(pass_len)])
-
 print("your password is:",password)
+
+
+# Random Password Strength Checker
+
+password = input("Enter your password: ")
+
+has_upper = any(char.isupper() for char in password)
+has_lower = any(char.islower() for char in password)
+has_digit = any(char.isdigit() for char in password)
+has_special = any(not char.isalnum() for char in password)
+
+score = sum([has_upper, has_lower, has_digit, has_special])
+
+if len(password) < 6:
+    print("Password Strength: Weak")
+
+elif score == 4 and len(password) >= 8:
+    print("Password Strength: Strong")
+
+elif score >= 2:
+    print("Password Strength: Medium")
+
+else:
+    print("Password Strength: Weak")
